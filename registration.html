@@ -10,7 +10,7 @@
   <link rel="stylesheet"
         href="css/normalize.css">
   <link rel="stylesheet"
-        href="css/style.css">
+        href="css/style-min.css">
 </head>
 
 <body class="container-wrapper container-wrapper-fix sticky-footer-body">
@@ -24,16 +24,16 @@
         Шапка сайта
       </h2>
       <div class="head-wrapper-left">
-        <a class="logo-master logo-master-header"
-           tabindex="0"
-           href="index.html">
+        <a class="logo-master logo-master-header cursor-default"
+           tabindex="0">
           <img class="logo-master-header"
                src="img/technomart-logo.svg"
                width="108"
                height="18"
                alt="Логотип магазина «Техномарт»">
         </a>
-        <div class="some-form" tabindex="0">
+        <div class="some-form"
+             tabindex="0">
           <!-- Форма поиска start -->
           <form class="some-main-form"
                 action="https://echo.htmlacademy.ru"
@@ -47,10 +47,10 @@
                    fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path class="some-form-find-path"
-                     fill-rule="evenodd"
-                     clip-rule="evenodd"
-                     d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
-                     fill="black" />
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                      fill="black" />
               </svg>
             </button>
             <input class="some-form-input"
@@ -61,40 +61,51 @@
         </div>
       </div>
       <div class="head-wrapper-right">
-        <div class="bookmark-inner bookmarks-number"
-             tabindex="0">
-          <svg class="bookmark-ico"
-               width="14"
-               height="16"
-               viewBox="0 0 14 16"
-               fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <path class="bookmark-ico-path"
-                  d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
-                  fill="white" />
-          </svg>
+        <a class="bookmark-inner bookmarks-number bookmarks"
+           href="#go-in-price"
+           id="add-in-boomarks"
+           tabindex="0">
+                <svg class="bookmark-ico"
+                     width="14"
+                     height="16"
+                     viewBox="0 0 14 16"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-label="Иконка закладки">
+                <path class="bookmark-ico-path"
+                      d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                      fill="none"/>
+                </svg>
           <p class="bookmarks bookmarks-number general-style-header">
-            Закладки: 0
+            Закладки: <span class="bookmarks-numder-dynamic">0</span>
           </p>
-        </div>
-        <div class="basket-inner basket-inner-dots"
+        </a>
+        <div class="basket-inner basket-add"
+             id="add-in-basket"
              tabindex="0">
           <svg class="basket-ico"
                width="15"
-               height="11"
-               viewBox="0 0 15 11"
+               height="15"
+               viewBox="0 0 15 15"
                fill="none"
-               xmlns="http://www.w3.org/2000/svg">
+               xmlns="http://www.w3.org/2000/svg"
+               aria-label="Иконка корзины">
+            <path class="basket-ico-path"
+                  d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                  fill="none"/>
+            <path class="basket-ico-path"
+                  d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                  fill="none"/>
             <path class="basket-ico-path"
                   d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"
-                  fill="transparent" />
+                  fill="none"/>
           </svg>
           <p class="basket general-style-header">
-            Корзина: 0
+            Корзина: <span class="price-numder-dynamic">0</span>
           </p>
         </div>
-        <button type="button"
-                class="order-registration">
+        <button class="order-registration"
+                type="button">
           Оформить заказ
         </button>
       </div>
@@ -226,7 +237,9 @@
     <!-- Страница с инструментами магазина «Техномарт» start -->
     <div class="content-empty-page-wrapper">
       <h1 class="content-empty-page">
-        Страница регистрации магазина «Техномарт»
+        Страница регистрации магазина «Техномарт»<br>
+        (к подвалу сайта)<br>
+        &darr;	&darr;	&darr;
       </h1>
     </div>
     <!-- Страница с инструментами магазина «Техномарт» end -->
