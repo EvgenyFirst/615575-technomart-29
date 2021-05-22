@@ -4213,6 +4213,7 @@ img {
 
 .email-sending-form-send-opened {
   display: block;
+
   animation: bounce 0.6s;
 }
 
